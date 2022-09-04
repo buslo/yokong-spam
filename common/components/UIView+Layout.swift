@@ -55,3 +55,11 @@ public extension NSLayoutConstraint {
     NSLayoutConstraint.activate(final.flatMap { $0 })
   }
 }
+
+public func >= (lhs: NSLayoutDimension, rhs: CGFloat) -> NSLayoutConstraint {
+  lhs.constraint(greaterThanOrEqualToConstant: rhs)
+}
+
+public func <= (lhs: NSLayoutDimension, rhs: CGFloat) -> NSLayoutConstraint {
+  lhs.constraint(lessThanOrEqualToConstant: rhs)
+}

@@ -30,8 +30,6 @@ class Extension: ILClassificationUIExtensionViewController {
     default:
       break
     }
-
-    extensionContext.isReadyForClassificationResponse = true
   }
 
   override func classificationResponse(
