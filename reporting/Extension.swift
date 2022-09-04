@@ -8,16 +8,31 @@
 import IdentityLookup
 import IdentityLookupUI
 import UIKit
+import YokongCommon
 
 class Extension: ILClassificationUIExtensionViewController {
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    extensionContext.isReadyForClassificationResponse = true
+  lazy var controllerView = ExtensionView()
+
+  override func loadView() {
+    Common.initialize()
+
+    view = controllerView
   }
 
   override func prepare(
-    for _: ILClassificationRequest
-  ) {}
+    for request: ILClassificationRequest
+  ) {
+    switch request {
+    case let msms as ILMessageClassificationRequest:
+      controllerView.prepareForMessage(msms)
+    case let call as ILCallClassificationRequest:
+      controllerView.prepareForCall(call)
+    default:
+      break
+    }
+
+    extensionContext.isReadyForClassificationResponse = true
+  }
 
   override func classificationResponse(
     for _: ILClassificationRequest

@@ -17,9 +17,13 @@ extension Extension: ILMessageFilterQueryHandling, ILMessageFilterCapabilitiesQu
   ) {
     let response = ILMessageFilterCapabilitiesQueryResponse()
 
-    // TODO: Update subActions from ILMessageFilterSubAction enum
-    // response.transactionalSubActions = [...]
-    // response.promotionalSubActions   = [...]
+    response.promotionalSubActions = [.promotionalOthers]
+    response.transactionalSubActions = [
+      .transactionalOrders,
+      .transactionalFinance,
+      .transactionalHealth,
+      .transactionalCarrier,
+    ]
 
     completion(response)
   }

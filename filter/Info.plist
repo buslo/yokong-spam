@@ -12,7 +12,7 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.identitylookup.message-filter</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).MessageFilterExtension</string>
+		<string>$(PRODUCT_MODULE_NAME).Extension</string>
 	</dict>
 </dict>
 </plist>
