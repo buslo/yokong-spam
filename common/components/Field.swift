@@ -72,14 +72,17 @@ public extension ComponentField {
     override func layoutSublayers() {
       super.layoutSublayers()
 
-      let path = UIBezierPath(roundedRect: bounds, cornerRadius: 6)
+      let inset = 1 / UIScreen.main.nativeScale
+      let path = UIBezierPath(roundedRect: bounds.insetBy(dx: inset, dy: inset), cornerRadius: 6)
       self.path = path.cgPath
-      fillColor = UIColor.secondarySystemBackground.cgColor
+
+      strokeColor = UIColor.secondarySystemFill.cgColor
+      fillColor = UIColor.systemBackground.cgColor
     }
 
     private func initialize() {
       lineWidth = 1
-      strokeColor = UIColor.black.withAlphaComponent(0.25).cgColor
+      masksToBounds = true
     }
   }
 }

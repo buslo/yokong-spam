@@ -7,7 +7,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>ILMessageFilterExtensionNetworkURL</key>
-			<string>https://yokong.buslo.tech/api/v0/</string>
+			<string>https://yokong.buslo.tech/api/query</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.identitylookup.message-filter</string>

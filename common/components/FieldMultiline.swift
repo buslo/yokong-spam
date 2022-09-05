@@ -24,8 +24,8 @@ public class ComponentFieldMultiline: UIView {
         prepareView(ref: &fieldView, view: UITextView()) { field in
           field.font = .fontWithVariant(for: .body)
           field.isScrollEnabled = false
-          field.backgroundColor = .secondarySystemBackground
-          field.textContainerInset = .init(top: 0, left: -4, bottom: 0, right: -4)
+          field.backgroundColor = .systemBackground
+          field.textContainerInset = .init(top: 8, left: -4, bottom: 8, right: -4)
           field.contentInset = .zero
 
           NSLayoutConstraint.activate([
@@ -45,44 +45,12 @@ public class ComponentFieldMultiline: UIView {
 }
 
 public extension ComponentFieldMultiline {
-  override class var layerClass: AnyClass { Background.self }
+  override class var layerClass: AnyClass { ComponentField.Background.self }
 
   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
     super.traitCollectionDidChange(previousTraitCollection)
 
     layer.setNeedsLayout()
     layer.layoutIfNeeded()
-  }
-
-  internal class Background: CAShapeLayer {
-    override init(layer: Any) {
-      super.init(layer: layer)
-
-      initialize()
-    }
-
-    override init() {
-      super.init()
-
-      initialize()
-    }
-
-    @available(*, unavailable)
-    required init?(coder _: NSCoder) {
-      fatalError()
-    }
-
-    override func layoutSublayers() {
-      super.layoutSublayers()
-
-      let path = UIBezierPath(roundedRect: bounds, cornerRadius: 6)
-      self.path = path.cgPath
-      fillColor = UIColor.secondarySystemBackground.cgColor
-    }
-
-    private func initialize() {
-      lineWidth = 1
-      strokeColor = UIColor.black.withAlphaComponent(0.25).cgColor
-    }
   }
 }

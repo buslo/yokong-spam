@@ -38,13 +38,13 @@ public extension UIFont {
       attributes[.size] = CGFloat(20)
     case .body:
       attributes[.traits] = [UIFontDescriptor.TraitKey.weight: UIFont.Weight.regular.rawValue]
-      attributes[.size] = CGFloat(16)
+      attributes[.size] = CGFloat(14)
     case .body2:
       attributes[.traits] = [UIFontDescriptor.TraitKey.weight: UIFont.Weight.regular.rawValue]
       attributes[.size] = CGFloat(12)
     case .action:
       attributes[.traits] = [UIFontDescriptor.TraitKey.weight: UIFont.Weight.semibold.rawValue]
-      attributes[.size] = CGFloat(16)
+      attributes[.size] = CGFloat(14)
     case .action2:
       attributes[.traits] = [UIFontDescriptor.TraitKey.weight: UIFont.Weight.semibold.rawValue]
       attributes[.size] = CGFloat(12)

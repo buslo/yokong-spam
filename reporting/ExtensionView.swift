@@ -18,7 +18,7 @@ class ExtensionView: UIScrollView {
     contentInsetAdjustmentBehavior = .always
     backgroundColor = .systemBackground
 
-    contentInset = .init(top: 16, left: 16, bottom: 32, right: 16)
+    contentInset = .init(top: 16, left: 16, bottom: 16, right: 16)
   }
 
   @available(*, unavailable)
@@ -28,10 +28,10 @@ class ExtensionView: UIScrollView {
 
   func prepareForMessage(_ request: ILMessageClassificationRequest) {
     formReportMessage = addSubviewAndPrepare(FormReportMessage(frame: .zero), preparation: { form in
-
       form.fieldSMSNumber.fieldView.text = request.messageCommunications[0].sender ?? ""
+      form.fieldSMSContent.fieldView.text = request.messageCommunications[0].messageBody ?? ""
 
-      NSLayoutConstraint.activate(form.layout(around: self), form.layout(widthsOf: self, inset: 32))
+      NSLayoutConstraint.activate(form.layout(around: self), form.layout(widthsOf: self))
     })
   }
 

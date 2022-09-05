@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA248CDA28C4FF9000270190 /* FieldOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA248CD928C4FF9000270190 /* FieldOption.swift */; };
+		FA248CDC28C5090C00270190 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA248CDB28C5090C00270190 /* Spacer.swift */; };
 		FAD76A1628C465B40006D8CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76A1528C465B40006D8CC /* AppDelegate.swift */; };
 		FAD76A1828C465B40006D8CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76A1728C465B40006D8CC /* SceneDelegate.swift */; };
 		FAD76A1A28C465B40006D8CC /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76A1928C465B40006D8CC /* RootController.swift */; };
@@ -107,6 +109,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA248CD928C4FF9000270190 /* FieldOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldOption.swift; sourceTree = "<group>"; };
+		FA248CDB28C5090C00270190 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 		FAD76A1228C465B40006D8CC /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD76A1528C465B40006D8CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD76A1728C465B40006D8CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,13 +213,13 @@
 		FAD76A0928C465B30006D8CC = {
 			isa = PBXGroup;
 			children = (
-				FAD76A5E28C46B8C0006D8CC /* server */,
 				FAD76A1428C465B40006D8CC /* app */,
 				FAD76ACD28C475450006D8CC /* common */,
 				FAD76A4128C466D20006D8CC /* filter */,
-				FAD76A5128C469D70006D8CC /* reporting */,
 				FAD76A6D28C472670006D8CC /* Frameworks */,
 				FAD76A1328C465B40006D8CC /* Products */,
+				FAD76A5128C469D70006D8CC /* reporting */,
+				FAD76A5E28C46B8C0006D8CC /* server */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,8 +250,8 @@
 		FAD76A4128C466D20006D8CC /* filter */ = {
 			isa = PBXGroup;
 			children = (
-				FAD76A4228C466D20006D8CC /* Extension.swift */,
 				FAD76A4428C466D20006D8CC /* Info.plist */,
+				FAD76A4228C466D20006D8CC /* Extension.swift */,
 			);
 			path = filter;
 			sourceTree = "<group>";
@@ -300,10 +304,12 @@
 			children = (
 				FAD76AD728C475750006D8CC /* Field.swift */,
 				FAD76B2628C4EBC70006D8CC /* FieldMultiline.swift */,
+				FA248CD928C4FF9000270190 /* FieldOption.swift */,
 				FAD76B0A28C4A0AC0006D8CC /* Group.swift */,
 				FAD76B0828C49DF40006D8CC /* UIFont+.swift */,
 				FAD76B0F28C4A1EF0006D8CC /* UIView+.swift */,
 				FAD76B1128C4A6950006D8CC /* UIView+Layout.swift */,
+				FA248CDB28C5090C00270190 /* Spacer.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -588,11 +594,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD76B1028C4A1EF0006D8CC /* UIView+.swift in Sources */,
+				FA248CDC28C5090C00270190 /* Spacer.swift in Sources */,
 				FAD76ADB28C4758C0006D8CC /* Common.swift in Sources */,
 				FAD76B0928C49DF40006D8CC /* UIFont+.swift in Sources */,
 				FAD76AD828C475750006D8CC /* Field.swift in Sources */,
 				FAD76B0E28C4A1AD0006D8CC /* FormReportMessage.swift in Sources */,
 				FAD76B1228C4A6950006D8CC /* UIView+Layout.swift in Sources */,
+				FA248CDA28C4FF9000270190 /* FieldOption.swift in Sources */,
 				FAD76B2728C4EBC70006D8CC /* FieldMultiline.swift in Sources */,
 				FAD76B0B28C4A0AC0006D8CC /* Group.swift in Sources */,
 			);

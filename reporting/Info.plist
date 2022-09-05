@@ -7,12 +7,12 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>ILClassificationExtensionSMSReportDestination</key>
-			<string>+12345678910</string>
+			<string>https://yokong.buslo.tech/api/report</string>
 		</dict>
-		<key>NSExtensionMainStoryboard</key>
-		<string>MainInterface</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.identitylookup.classification-ui</string>
+		<key>NSExtensionMainStoryboard</key>
+		<string>MainInterface</string>
 	</dict>
 </dict>
 </plist>

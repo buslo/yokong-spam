@@ -18,13 +18,15 @@ class RootController: UIViewController {
 
     view.addSubviewAndPrepare(scrollView) { scrollView in
       scrollView.contentInsetAdjustmentBehavior = .always
-      scrollView.contentInset = .init(top: 16, left: 16, bottom: 32, right: 16)
-
-      NSLayoutConstraint.activate(scrollView.layout(around: view))
+      scrollView.contentInset = .init(top: 16, left: 16, bottom: 16, right: 16)
 
       scrollView.addSubviewAndPrepare(FormReportMessage(frame: .zero)) { form in
-        NSLayoutConstraint.activate(form.layout(around: scrollView), form.layout(widthsOf: scrollView, inset: 32))
+        NSLayoutConstraint.activate(form.layout(around: scrollView), form.layout(widthsOf: scrollView))
       }
+
+      NSLayoutConstraint.activate(scrollView.layout(around: view, priorities: [.bottom: .defaultLow]), [
+        scrollView.bottomAnchor.constraint(lessThanOrEqualTo: view.keyboardLayoutGuide.topAnchor),
+      ])
     }
   }
 }
