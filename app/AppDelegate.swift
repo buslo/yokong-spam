@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import YokongCommon
+import YokongAppCommon
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _: UIApplication,
     willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil
   ) -> Bool {
-    Common.initialize()
+    AppCommon.initialize()
 
     return true
   }

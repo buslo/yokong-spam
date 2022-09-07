@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		FA248CDA28C4FF9000270190 /* FieldOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA248CD928C4FF9000270190 /* FieldOption.swift */; };
 		FA248CDC28C5090C00270190 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA248CDB28C5090C00270190 /* Spacer.swift */; };
+		FA83100A28C90C4000035FB8 /* YokongCommon in Frameworks */ = {isa = PBXBuildFile; productRef = FA83100928C90C4000035FB8 /* YokongCommon */; };
+		FAC4EF0228C90BB6008CF5EB /* YokongCommon in Frameworks */ = {isa = PBXBuildFile; productRef = FAC4EF0128C90BB6008CF5EB /* YokongCommon */; };
+		FAC4EF0428C90BBE008CF5EB /* YokongCommon in Frameworks */ = {isa = PBXBuildFile; productRef = FAC4EF0328C90BBE008CF5EB /* YokongCommon */; };
+		FAC4EF0628C90BC2008CF5EB /* YokongCommon in Frameworks */ = {isa = PBXBuildFile; productRef = FAC4EF0528C90BC2008CF5EB /* YokongCommon */; };
 		FAD76A1628C465B40006D8CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76A1528C465B40006D8CC /* AppDelegate.swift */; };
 		FAD76A1828C465B40006D8CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76A1728C465B40006D8CC /* SceneDelegate.swift */; };
 		FAD76A1A28C465B40006D8CC /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76A1928C465B40006D8CC /* RootController.swift */; };
@@ -20,10 +24,10 @@
 		FAD76A5628C469D70006D8CC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD76A5428C469D70006D8CC /* MainInterface.storyboard */; };
 		FAD76A5A28C469D70006D8CC /* reporting.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FAD76A5028C469D70006D8CC /* reporting.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FAD76A6128C470600006D8CC /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76A6028C470600006D8CC /* ExtensionView.swift */; };
-		FAD76AD328C475530006D8CC /* YokongCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD76ACC28C475450006D8CC /* YokongCommon.framework */; };
-		FAD76AD428C475570006D8CC /* YokongCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD76ACC28C475450006D8CC /* YokongCommon.framework */; };
+		FAD76AD328C475530006D8CC /* YokongAppCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD76ACC28C475450006D8CC /* YokongAppCommon.framework */; };
+		FAD76AD428C475570006D8CC /* YokongAppCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD76ACC28C475450006D8CC /* YokongAppCommon.framework */; };
 		FAD76AD828C475750006D8CC /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76AD728C475750006D8CC /* Field.swift */; };
-		FAD76ADB28C4758C0006D8CC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76ADA28C4758C0006D8CC /* Common.swift */; };
+		FAD76ADB28C4758C0006D8CC /* AppCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76ADA28C4758C0006D8CC /* AppCommon.swift */; };
 		FAD76AF028C475C30006D8CC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD76ADE28C475C30006D8CC /* Poppins-Medium.ttf */; };
 		FAD76AF128C475C30006D8CC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD76ADF28C475C30006D8CC /* Poppins-Bold.ttf */; };
 		FAD76AF228C475C30006D8CC /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD76AE028C475C30006D8CC /* Poppins-BoldItalic.ttf */; };
@@ -42,8 +46,8 @@
 		FAD76AFF28C475C30006D8CC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD76AED28C475C30006D8CC /* Poppins-SemiBold.ttf */; };
 		FAD76B0028C475C30006D8CC /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD76AEE28C475C30006D8CC /* Poppins-SemiBoldItalic.ttf */; };
 		FAD76B0128C475C30006D8CC /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD76AEF28C475C30006D8CC /* Poppins-BlackItalic.ttf */; };
-		FAD76B0328C498C00006D8CC /* YokongCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD76ACC28C475450006D8CC /* YokongCommon.framework */; };
-		FAD76B0428C498C00006D8CC /* YokongCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAD76ACC28C475450006D8CC /* YokongCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAD76B0328C498C00006D8CC /* YokongAppCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD76ACC28C475450006D8CC /* YokongAppCommon.framework */; };
+		FAD76B0428C498C00006D8CC /* YokongAppCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAD76ACC28C475450006D8CC /* YokongAppCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAD76B0928C49DF40006D8CC /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76B0828C49DF40006D8CC /* UIFont+.swift */; };
 		FAD76B0B28C4A0AC0006D8CC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76B0A28C4A0AC0006D8CC /* Group.swift */; };
 		FAD76B0E28C4A1AD0006D8CC /* FormReportMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD76B0D28C4A1AD0006D8CC /* FormReportMessage.swift */; };
@@ -101,7 +105,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FAD76B0428C498C00006D8CC /* YokongCommon.framework in Embed Frameworks */,
+				FAD76B0428C498C00006D8CC /* YokongAppCommon.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +115,7 @@
 /* Begin PBXFileReference section */
 		FA248CD928C4FF9000270190 /* FieldOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldOption.swift; sourceTree = "<group>"; };
 		FA248CDB28C5090C00270190 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
+		FA5CE52A28C90A85005027BA /* common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = common; sourceTree = "<group>"; };
 		FAD76A1228C465B40006D8CC /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD76A1528C465B40006D8CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD76A1728C465B40006D8CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,9 +132,9 @@
 		FAD76A5728C469D70006D8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD76A5E28C46B8C0006D8CC /* server */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = server; sourceTree = "<group>"; };
 		FAD76A6028C470600006D8CC /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
-		FAD76ACC28C475450006D8CC /* YokongCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YokongCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD76ACC28C475450006D8CC /* YokongAppCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YokongAppCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD76AD728C475750006D8CC /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
-		FAD76ADA28C4758C0006D8CC /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		FAD76ADA28C4758C0006D8CC /* AppCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommon.swift; sourceTree = "<group>"; };
 		FAD76ADE28C475C30006D8CC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		FAD76ADF28C475C30006D8CC /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		FAD76AE028C475C30006D8CC /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -168,9 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD76B1F28C4E9680006D8CC /* CoreGraphics.framework in Frameworks */,
-				FAD76B0328C498C00006D8CC /* YokongCommon.framework in Frameworks */,
+				FAD76B0328C498C00006D8CC /* YokongAppCommon.framework in Frameworks */,
 				FAD76B2428C4E9770006D8CC /* QuartzCore.framework in Frameworks */,
 				FAD76B1E28C4E9620006D8CC /* UIKit.framework in Frameworks */,
+				FAC4EF0228C90BB6008CF5EB /* YokongCommon in Frameworks */,
 				FAD76B2028C4E96D0006D8CC /* Foundation.framework in Frameworks */,
 				FAD76B2228C4E9720006D8CC /* IdentityLookupUI.framework in Frameworks */,
 				FAD76B2128C4E9720006D8CC /* IdentityLookup.framework in Frameworks */,
@@ -181,7 +187,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD76AD428C475570006D8CC /* YokongCommon.framework in Frameworks */,
+				FAD76AD428C475570006D8CC /* YokongAppCommon.framework in Frameworks */,
+				FAC4EF0428C90BBE008CF5EB /* YokongCommon in Frameworks */,
 				FAD76B1D28C4E95B0006D8CC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,8 +201,9 @@
 				FAD76B1A28C4E9250006D8CC /* Foundation.framework in Frameworks */,
 				FAD76B2528C4E97C0006D8CC /* QuartzCore.framework in Frameworks */,
 				FAD76B1828C4E91D0006D8CC /* IdentityLookupUI.framework in Frameworks */,
+				FAC4EF0628C90BC2008CF5EB /* YokongCommon in Frameworks */,
 				FAD76B1728C4E91D0006D8CC /* IdentityLookup.framework in Frameworks */,
-				FAD76AD328C475530006D8CC /* YokongCommon.framework in Frameworks */,
+				FAD76AD328C475530006D8CC /* YokongAppCommon.framework in Frameworks */,
 				FAD76B1428C4E9160006D8CC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA83100A28C90C4000035FB8 /* YokongCommon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				FAD76A1428C465B40006D8CC /* app */,
-				FAD76ACD28C475450006D8CC /* common */,
+				FAD76ACD28C475450006D8CC /* app-common */,
+				FA5CE52A28C90A85005027BA /* common */,
 				FAD76A4128C466D20006D8CC /* filter */,
 				FAD76A6D28C472670006D8CC /* Frameworks */,
 				FAD76A1328C465B40006D8CC /* Products */,
@@ -229,7 +239,7 @@
 				FAD76A1228C465B40006D8CC /* app.app */,
 				FAD76A4028C466D20006D8CC /* filter.appex */,
 				FAD76A5028C469D70006D8CC /* reporting.appex */,
-				FAD76ACC28C475450006D8CC /* YokongCommon.framework */,
+				FAD76ACC28C475450006D8CC /* YokongAppCommon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,15 +298,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FAD76ACD28C475450006D8CC /* common */ = {
+		FAD76ACD28C475450006D8CC /* app-common */ = {
 			isa = PBXGroup;
 			children = (
-				FAD76ADA28C4758C0006D8CC /* Common.swift */,
+				FAD76ADA28C4758C0006D8CC /* AppCommon.swift */,
 				FAD76ADC28C475B00006D8CC /* assets */,
 				FAD76AD628C4756F0006D8CC /* components */,
 				FAD76B0C28C4A1700006D8CC /* forms */,
 			);
-			path = common;
+			path = "app-common";
 			sourceTree = "<group>";
 		};
 		FAD76AD628C4756F0006D8CC /* components */ = {
@@ -386,6 +396,9 @@
 				FAD76A5928C469D70006D8CC /* PBXTargetDependency */,
 			);
 			name = app;
+			packageProductDependencies = (
+				FAC4EF0128C90BB6008CF5EB /* YokongCommon */,
+			);
 			productName = yokongspam;
 			productReference = FAD76A1228C465B40006D8CC /* app.app */;
 			productType = "com.apple.product-type.application";
@@ -403,6 +416,9 @@
 			dependencies = (
 			);
 			name = filter;
+			packageProductDependencies = (
+				FAC4EF0328C90BBE008CF5EB /* YokongCommon */,
+			);
 			productName = filter;
 			productReference = FAD76A4028C466D20006D8CC /* filter.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -420,13 +436,16 @@
 			dependencies = (
 			);
 			name = reporting;
+			packageProductDependencies = (
+				FAC4EF0528C90BC2008CF5EB /* YokongCommon */,
+			);
 			productName = reporting;
 			productReference = FAD76A5028C469D70006D8CC /* reporting.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		FAD76ACB28C475450006D8CC /* common */ = {
+		FAD76ACB28C475450006D8CC /* app-common */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAD76AD028C475450006D8CC /* Build configuration list for PBXNativeTarget "common" */;
+			buildConfigurationList = FAD76AD028C475450006D8CC /* Build configuration list for PBXNativeTarget "app-common" */;
 			buildPhases = (
 				FAD76AC728C475450006D8CC /* Headers */,
 				FAD76AC828C475450006D8CC /* Sources */,
@@ -437,9 +456,12 @@
 			);
 			dependencies = (
 			);
-			name = common;
+			name = "app-common";
+			packageProductDependencies = (
+				FA83100928C90C4000035FB8 /* YokongCommon */,
+			);
 			productName = common;
-			productReference = FAD76ACC28C475450006D8CC /* YokongCommon.framework */;
+			productReference = FAD76ACC28C475450006D8CC /* YokongAppCommon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -481,9 +503,9 @@
 			projectRoot = "";
 			targets = (
 				FAD76A1128C465B30006D8CC /* app */,
+				FAD76ACB28C475450006D8CC /* app-common */,
 				FAD76A3F28C466D20006D8CC /* filter */,
 				FAD76A4F28C469D70006D8CC /* reporting */,
-				FAD76ACB28C475450006D8CC /* common */,
 			);
 		};
 /* End PBXProject section */
@@ -595,7 +617,7 @@
 			files = (
 				FAD76B1028C4A1EF0006D8CC /* UIView+.swift in Sources */,
 				FA248CDC28C5090C00270190 /* Spacer.swift in Sources */,
-				FAD76ADB28C4758C0006D8CC /* Common.swift in Sources */,
+				FAD76ADB28C4758C0006D8CC /* AppCommon.swift in Sources */,
 				FAD76B0928C49DF40006D8CC /* UIFont+.swift in Sources */,
 				FAD76AD828C475750006D8CC /* Field.swift in Sources */,
 				FAD76B0E28C4A1AD0006D8CC /* FormReportMessage.swift in Sources */,
@@ -947,8 +969,8 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.buslo.yokongspam.common;
-				PRODUCT_MODULE_NAME = YokongCommon;
-				PRODUCT_NAME = YokongCommon;
+				PRODUCT_MODULE_NAME = YokongAppCommon;
+				PRODUCT_NAME = YokongAppCommon;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -981,8 +1003,8 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.buslo.yokongspam.common;
-				PRODUCT_MODULE_NAME = YokongCommon;
-				PRODUCT_NAME = YokongCommon;
+				PRODUCT_MODULE_NAME = YokongAppCommon;
+				PRODUCT_NAME = YokongAppCommon;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1031,7 +1053,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAD76AD028C475450006D8CC /* Build configuration list for PBXNativeTarget "common" */ = {
+		FAD76AD028C475450006D8CC /* Build configuration list for PBXNativeTarget "app-common" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAD76AD128C475450006D8CC /* Debug */,
@@ -1041,6 +1063,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA83100928C90C4000035FB8 /* YokongCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YokongCommon;
+		};
+		FAC4EF0128C90BB6008CF5EB /* YokongCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YokongCommon;
+		};
+		FAC4EF0328C90BBE008CF5EB /* YokongCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YokongCommon;
+		};
+		FAC4EF0528C90BC2008CF5EB /* YokongCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YokongCommon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAD76A0A28C465B30006D8CC /* Project object */;
 }

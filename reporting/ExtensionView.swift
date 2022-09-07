@@ -7,7 +7,7 @@
 
 import IdentityLookup
 import UIKit
-import YokongCommon
+import YokongAppCommon
 
 class ExtensionView: UIScrollView {
   weak var formReportMessage: FormReportMessage?

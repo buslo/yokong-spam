@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public extension Common {
+public extension AppCommon {
   enum FontVariant {
     case heading
     case heading2
@@ -22,7 +22,7 @@ public extension Common {
 }
 
 public extension UIFont {
-  static func fontWithVariant(for variant: Common.FontVariant) -> UIFont {
+  static func fontWithVariant(for variant: AppCommon.FontVariant) -> UIFont {
     var attributes = [UIFontDescriptor.AttributeName: Any]()
     attributes[.family] = "Poppins"
 

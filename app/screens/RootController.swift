@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import YokongCommon
+import YokongAppCommon
 
 class RootController: UIViewController {
   let scrollView = UIScrollView()

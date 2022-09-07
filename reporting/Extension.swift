@@ -8,13 +8,13 @@
 import IdentityLookup
 import IdentityLookupUI
 import UIKit
-import YokongCommon
+import YokongAppCommon
 
 class Extension: ILClassificationUIExtensionViewController {
   lazy var controllerView = ExtensionView()
 
   override func loadView() {
-    Common.initialize()
+    AppCommon.initialize()
 
     view = controllerView
   }

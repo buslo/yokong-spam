@@ -1,5 +1,5 @@
 //
-//  Common.swift
+//  AppCommon.swift
 //  common
 //
 //  Created by Michael Ong on 9/4/22.
@@ -10,7 +10,7 @@ import CoreText
 import Foundation
 import os.log
 
-public enum Common {
+public enum AppCommon {
   public static var bundleIdentifier = "tech.buslo.yokongspam.common"
 
   public static func initialize() {
@@ -19,7 +19,7 @@ public enum Common {
 }
 
 public extension OSLog {
-  static let commonFontLoading = OSLog(subsystem: Common.bundleIdentifier, category: "common:font")
+  static let commonFontLoading = OSLog(subsystem: AppCommon.bundleIdentifier, category: "common:font")
 }
 
 func initFonts() {
@@ -36,10 +36,10 @@ func initFonts() {
   ]
 
   let withItalics = fontVariants.flatMap { variant in [variant, "\(variant)Italic"] }
-  let bundle = Bundle(identifier: Common.bundleIdentifier)
+  let bundle = Bundle(identifier: AppCommon.bundleIdentifier)
 
   let dispatchGroup = DispatchGroup()
-  let dispatchQueue = DispatchQueue(label: "\(Common.bundleIdentifier).thread.fontloader", attributes: [.concurrent])
+  let dispatchQueue = DispatchQueue(label: "\(AppCommon.bundleIdentifier).thread.fontloader", attributes: [.concurrent])
 
   for fontName in withItalics {
     dispatchQueue.async(group: dispatchGroup) {
