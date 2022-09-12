@@ -40,6 +40,8 @@ public class FormReportMessage: UIView {
 
   public weak var fieldSMSNumber: ComponentField!
   public weak var fieldSMSContent: ComponentFieldMultiline!
+  public weak var fieldSMSKind: ComponentFieldOption!
+  public weak var fieldSMSLabel: ComponentField!
 
   override public init(frame: CGRect) {
     super.init(frame: frame)
@@ -56,9 +58,12 @@ public class FormReportMessage: UIView {
         prepareView(ref: &fieldSMSContent, view: ComponentFieldMultiline()) { field in
           field.labelView.text = "Content"
         }
-        prepareView(view: ComponentFieldOption()) { field in
+        prepareView(ref: &fieldSMSKind, view: ComponentFieldOption()) { field in
           field.labelView.text = "What Kind"
           field.optionItems = optionItems
+        }
+        prepareView(ref: &fieldSMSLabel, view: ComponentField()) { field in
+          field.labelView.text = "Label As"
         }
       }
 

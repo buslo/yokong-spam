@@ -21,7 +21,10 @@ class RootController: UIViewController {
       scrollView.contentInset = .init(top: 16, left: 16, bottom: 16, right: 16)
 
       scrollView.addSubviewAndPrepare(FormReportMessage(frame: .zero)) { form in
-        NSLayoutConstraint.activate(form.layout(around: scrollView), form.layout(widthsOf: scrollView))
+        NSLayoutConstraint.activate(
+          form.layout(around: scrollView),
+          form.layout(widthsOf: view.safeAreaLayoutGuide, inset: 32)
+        )
       }
 
       NSLayoutConstraint.activate(scrollView.layout(around: view, priorities: [.bottom: .defaultLow]), [

@@ -130,6 +130,7 @@ extension ComponentFieldOption {
         group.alignment = .center
 
         group.withSpacing(4).withMargins(.init(vertical: 8, horizontal: 8)).withArrangedSubviews {
+          Spacer()
           prepareView(ref: &itemImageView, view: UIImageView()) { imageView in
             imageView.contentMode = .scaleAspectFit
           }

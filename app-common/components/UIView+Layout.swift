@@ -55,7 +55,19 @@ public extension UIView {
     }
   }
 
+  func layout(widthsOf view: UILayoutGuide, inset: CGFloat = 0) -> [NSLayoutConstraint] {
+    return [
+      widthAnchor.constraint(equalTo: view.widthAnchor, constant: -inset),
+    ]
+  }
+
   func layout(heightsOf view: UIView, inset: CGFloat = 0) -> [NSLayoutConstraint] {
+    return [
+      heightAnchor.constraint(equalTo: view.heightAnchor, constant: -inset),
+    ]
+  }
+
+  func layout(heightsOf view: UILayoutGuide, inset: CGFloat = 0) -> [NSLayoutConstraint] {
     return [
       heightAnchor.constraint(equalTo: view.heightAnchor, constant: -inset),
     ]
